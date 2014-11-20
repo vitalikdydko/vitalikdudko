@@ -1,0 +1,60 @@
+function plus(a, b) {
+    return a + b
+};
+function minus(a, b) {
+    return a - b;
+};
+function mnojena(a,b) {
+    return a * b;
+}
+function dilena(a,b){
+   return a/b;
+}
+function stepin(a,b){
+    return (Math.pow(a,b));
+}
+function korin(a){
+    return (Math.sqrt(a));
+}
+function sinus(a){
+    return (Math.sin(a));}
+function cosinus(a){
+    return (Math.cos(a));
+}
+
+function func(a, action, b) {
+    if(action === '+') {
+        return plus(a, b);
+    }
+
+    if(action === '-') {
+        return minus(a, b);
+    }
+    if(action==='*'){
+        return mnojena(a,b);
+    }
+    if(action==='/'){
+        return dilena(a,b);
+    }
+    if(action==='pow'){
+        return stepin(a,b);
+    }
+    if(action==='sqrt'){
+        return korin(a);
+    }
+    if(action==='sin'){
+        return sinus(a);
+    }
+    if(action==='cos'){
+        return cosinus(a);
+    }
+};
+
+console.log(func(2, '+', 1));
+console.log(func(8, '-', 5));
+console.log(func(10,'/',5));
+console.log(func(4,'*',4));
+console.log(func(2,'pow',5));
+console.log(func(16,'sqrt'));
+console.log(func(90,'sin'));
+console.log(func(50,'cos'));
